@@ -7,11 +7,10 @@ Vagrant.configure(2) do |config|
   config.vm.hostname = "myjessie"
   config.vm.box_check_update = "true"
 
-  config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.synced_folder "shared", "/home/vagrant/shared"
+  config.vm.synced_folder ".", "/home/vagrant/shared"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "mapnik3-dev"
+    vb.name = "mapnik3"
     vb.memory = "6144"
     vb.cpus = 2
   end
