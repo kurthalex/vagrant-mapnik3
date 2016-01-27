@@ -1,2 +1,6 @@
-# vagrant-mapnik3
-Mapnik 3 Vagrantfile
+# Run Mapnik3 in a Vagrant box
+
+https://github.com/kurthalex/vagrant-mapnik3.git
+cd vagrant-mapnik3
+vagrant up
+vagrant ssh
